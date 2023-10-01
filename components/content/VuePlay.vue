@@ -16,7 +16,7 @@ iframe {
   width: 100%;
   height: 400px;
   box-shadow: 0 3px 16px rgba(0, 0, 0, 0.06);
-  border: 1px solid #ddd;
+  border: 1px solid #e9e9e9;
   margin: 0 0 20px;
   border-radius: 10px;
   overflow: hidden;
