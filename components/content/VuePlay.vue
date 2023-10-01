@@ -15,7 +15,7 @@ defineProps({
 iframe {
   width: 100%;
   height: 400px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
   margin: 0 0 20px;
   border-radius: 5px;
   overflow: hidden;
