@@ -4,12 +4,12 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'KKA-MANG의 개발자 블로그입니다.'
+      content: 'KKaMang 개발자 블로그입니다.'
     },
     {
       name: 'keywords',
       // 개발자 블로그 keywords
-      content: 'KKA-MANG, JavaScript, TypeScript, Vue3'
+      content: 'KKaMang, JavaScript, TypeScript, Vue3'
     }
   ]
 })
