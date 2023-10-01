@@ -2,8 +2,15 @@
 
 <template>
   <nav class="header__nav">
-    <RouterLink class="header__link" to="/">Home</RouterLink>
-    <RouterLink class="header__link" to="/blog">Blog</RouterLink>
+    <ContentNavigation v-slot="{ navigation }">
+      <NuxtLink
+        v-for="link of navigation"
+        :key="link._path"
+        class="header__link"
+        :to="link._path">
+        {{ link.title }} 
+      </NuxtLink>
+    </ContentNavigation>
   </nav>
 </template>
 
@@ -13,7 +20,7 @@
   gap: 30px;
 }
 .header__link {
-  padding: 20px 0px;
+  padding: 15px 0px;
   font-weight: var(--fw-regular);
   position: relative;
 }

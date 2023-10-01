@@ -61,6 +61,7 @@ const getDate = (_date: Date) => (_date ? new Date(_date).toLocaleDateString('ko
   display: flex;
   align-items: center;
   margin: 20px 0 0;
+  gap: 15px;
   padding: 0;
 }
 .board__tag:empty {
@@ -71,15 +72,17 @@ const getDate = (_date: Date) => (_date ? new Date(_date).toLocaleDateString('ko
   line-height: 1.5;
   font-weight: var(--fw-regular);
   color: #333;
-  padding: 3px 8px;
   list-style: none;
+}
+.board__tag li::before {
+  content: '#';
 }
 .board__date {
   font-size: 16px;
   width: 100%;
   color: #777;
   font-weight: var(--fw-medium);
-  margin: 0;
+  margin: -10px 0 0;
   padding: 0;
   text-align: right;
 }

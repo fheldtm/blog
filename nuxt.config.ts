@@ -21,7 +21,8 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       'Nanum Gothic': [400, 700, 800],
-      'Nanum Gothic Coding': [400, 700]
+      'Nanum Gothic Coding': [400, 700],
+      'Black Ops One': [400]
     }
   },
   css: [

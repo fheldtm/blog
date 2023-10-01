@@ -1,8 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
-  <h1>NuxtJS KKA-MANG Blog</h1>
+  <Board path="/" />
 </template>
-
-<style scoped>
-</style>
