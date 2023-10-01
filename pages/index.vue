@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>Hello world</div>
+  <h1>NuxtJS KKA-MANG Blog</h1>
 </template>
 
 <style scoped>
