@@ -12,7 +12,7 @@
 <style scoped>
 .header {
   padding: 10px 0;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 .header__wrap {
   display: flex;

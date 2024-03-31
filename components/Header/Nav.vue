@@ -17,12 +17,13 @@
 <style scoped>
 .header__nav {
   display: flex;
-  gap: 30px;
+  gap: 16px;
 }
 .header__link {
-  padding: 15px 0px;
+  padding: 8px 0px;
   font-weight: var(--fw-regular);
   position: relative;
+  font-size: 14px;
 }
 
 .header__link::before,
@@ -31,7 +32,7 @@
   position: absolute;
   bottom: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   display: block;
   background: #000;
   transition-property: width;

@@ -17,6 +17,7 @@
   "type": "module",
   "dependencies": {
     "@nuxt/content": "^2.8.5",
-    "@nuxt/image": "rc"
+    "@nuxt/image": "rc",
+    "clipboard": "^2.0.11"
   }
 }

@@ -36,39 +36,40 @@ const getDate = (_date: Date) => (_date ? new Date(_date).toLocaleDateString('ko
   flex-direction: column;
 }
 .board__link {
-  padding: 30px 0;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   border-bottom: 1px solid #f2f2f2;
 }
 .board__link:hover .board__title {
-  color: #777;
+  color: #333;
 }
 .board__title {
-  font-size: 24px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.333;
   font-weight: var(--fw-medium);
   color: #333;
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
 }
 .board__desc {
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
 .board__tag {
   display: flex;
   align-items: center;
-  margin: 20px 0 0;
-  gap: 15px;
+  margin: 10px 0 0;
+  gap: 10px;
   padding: 0;
 }
 .board__tag:empty {
   display: none;
 }
 .board__tag li {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: var(--fw-regular);
   color: #333;
@@ -78,11 +79,11 @@ const getDate = (_date: Date) => (_date ? new Date(_date).toLocaleDateString('ko
   content: '#';
 }
 .board__date {
-  font-size: 16px;
+  font-size: 14px;
   width: 100%;
   color: #777;
   font-weight: var(--fw-medium);
-  margin: -10px 0 0;
+  margin: 0;
   padding: 0;
   text-align: right;
 }

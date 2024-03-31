@@ -16,17 +16,19 @@ export default defineNuxtConfig({
   content: {
     highlight: {
       theme: 'github-light'
+    },
+    markdown: {
     }
   },
   googleFonts: {
     families: {
-      'Nanum Gothic': [400, 700, 800],
       'Nanum Gothic Coding': [400, 700],
-      'Black Ops One': [400]
+      'Black Ops One': 400
     }
   },
   css: [
-    '~/assets/css/base.css',
     '~/assets/css/github-markdown.css',
+    '~/assets/css/base.css',
+    '~/assets/css/font.css',
   ],
 })

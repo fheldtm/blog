@@ -13,15 +13,15 @@ h1 {
   margin: 0;
 }
 .logo {
-  font-size: 28px;
+  font-size: 20px;
   line-height: 1.5;
   font-weight: var(--fw-bold);
-  color: #000;
+  color: #373d3a;
   margin: 0;
   font-family: 'Black Ops One';
   display: block;
 }
 .logo span {
-  font-size: 46px;
+  font-size: 36px;
 }
 </style>
