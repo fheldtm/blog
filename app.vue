@@ -1,18 +1,19 @@
 <script setup lang="ts">
 useHead({
-  title: 'KKA-MANG',
+  title: 'HaeRik',
   meta: [
     {
       name: 'description',
-      content: 'KKaMang 개발자 블로그입니다.'
+      content: 'HaeRik 개발자 블로그입니다.',
     },
     {
       name: 'keywords',
       // 개발자 블로그 keywords
-      content: 'KKaMang, JavaScript, TypeScript, Vue3'
-    }
-  ]
-})
+      content:
+        'HaeRik, JavaScript, TypeScript, Vue, Nuxt, Frontend, Developer, Blog',
+    },
+  ],
+});
 </script>
 
 <template>
