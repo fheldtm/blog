@@ -1,11 +1,7 @@
-<script setup lang="ts"></script>
-
 <template>
   <Header />
+  <Banner />
   <Wrap>
     <slot></slot>
   </Wrap>
 </template>
-
-<style scoped>
-</style>

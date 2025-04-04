@@ -6,36 +6,37 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
     '@nuxt/content',
     '@nuxtjs/google-fonts',
-    '@nuxt/image'
+    '@nuxt/image',
   ],
 
   robots: {
-    rules: {
-      UserAgent: '*',
-      Disallow: ''
-    }
+    allow: '/',
   },
 
   content: {
     highlight: {
-      theme: 'github-light'
+      theme: 'nord',
     },
-    markdown: {
-    }
   },
 
   googleFonts: {
     families: {
-      'Nanum Gothic Coding': [400, 700],
-      'Black Ops One': 400
-    }
+      'Black+Ops+One': true,
+    },
   },
 
   css: [
-    '~/assets/css/github-markdown.css',
-    '~/assets/css/base.css',
     '~/assets/css/font.css',
+    '~/assets/css/base.css',
+    '~/assets/css/github-markdown.css',
   ],
 
   compatibilityDate: '2025-01-07',
-})
+
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
+});

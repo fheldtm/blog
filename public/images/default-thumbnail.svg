@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="220" viewBox="0 0 300 220">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9fa"/>
+      <stop offset="100%" stop-color="#e9ecef"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8BC34A"/>
+      <stop offset="100%" stop-color="#4CAF50"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="220" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="80" r="32" fill="url(#accentGradient)" opacity="0.9"/>
+  <rect x="118" y="140" width="64" height="8" rx="4" fill="#ced4da"/>
+  <rect x="105" y="156" width="90" height="6" rx="3" fill="#dee2e6"/>
+  <rect x="115" y="170" width="70" height="6" rx="3" fill="#dee2e6"/>
+  
+  <!-- Image placeholder icon -->
+  <path d="M140,70 L160,70 L160,90 L140,90 Z" fill="white" opacity="0.9"/>
+  <path d="M135,75 L140,70 L140,90 L130,80 Z" fill="white" opacity="0.9"/>
+  <path d="M165,75 L160,70 L160,90 L170,80 Z" fill="white" opacity="0.9"/>
+</svg>

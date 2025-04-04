@@ -1,14 +1,15 @@
 ---
-title: "[node] pkg 라이브러리를 이용하여 웹서버를 exe 파일로 만들어 서비스에 등록해보자."
+title: '[node] pkg 라이브러리를 이용하여 웹서버를 exe 파일로 만들어 서비스에 등록해보자.'
 description: express.js, nestjs 웹 서버를 exe로 만들고 윈도우 서비스에 등록하는 방법을 알아보자.
-head: 
-  title: "[node] pkg 라이브러리를 이용하여 웹서버를 exe 파일로 만들어 서비스에 등록해보자. - KKaMang"
-tag: node, pkg, nestjs, expressjs
+head:
+  title: '[node] pkg 라이브러리를 이용하여 웹서버를 exe 파일로 만들어 서비스에 등록해보자. - KKaMang'
+tag:
+  - node
+  - pkg
+  - nestjs
+  - express
 date: 2023-10-20
 ---
-
-
-# {{ $doc.title }}
 
 ## 왜 pkg 인가?
 
@@ -177,12 +178,8 @@ pkg의 [github 문서](https://github.com/vercel/pkg#config)에 가서 보면 �
   // 기존 package.json 내용
   "bin": "./dist/main.js",
   "pkg": {
-    "assets": [
-      "client/**/*"
-    ],
-    "targets": [
-      "node16-win-x64"
-    ]
+    "assets": ["client/**/*"],
+    "targets": ["node16-win-x64"]
   }
 }
 ```
@@ -231,6 +228,7 @@ pkg의 [github 문서](https://github.com/vercel/pkg#config)에 가서 보면 �
 실제로 서비스 시작을 누르면 `시작하는 중`에서 변하지 않다가 `Timeout`이 나면서 서비스가 중지되는 것을 볼 수 있는데, `시작하는 중`일 때 localhost 서버를 열어보면 정상 작동되는걸 알 수 있다.
 
 이를 해결하기 위해서 여러 방법을 찾아봤는데, 같은 실수를 하지 말라고 실패한 방법을 소개해보려고 한다.
+
 ### 삽질 : node-windows 사용
 
 [node-windows](https://www.npmjs.com/package/node-windows)는 node.js 의 라이브러리 중 하나로 node로 만든 파일을 윈도우 서비스에 등록할 수 있도록 도와주는 라이브러리이다.
@@ -273,12 +271,12 @@ xml 설정이 완료가 되면 아래 명령어로 서비스 등록, 실행, ~~�
 ![이미지](/img/Pasted%20image%2020231020135906.png)
 
 > **서비스 중지가 안 되는 이유**
-> 
+>
 > 지금 해당 서비스는 웹서버를 돌리고 있는 상태이다. 때문에 웹서버를 종료하지 않고 서비스 중지를 하려고 하면 영원히 **중지하는 중** 에서 변하지 않고 서비스를 강제로 종료하려고 해도 웹서버는 살아있는 상태가 되어버린다.
 > 명령프롬프트를 열어서 `netstat -ano | findstr :3000` 으로 3000번 포트(웹서버 포트)의 PID 값을 찾아서 taskkill 을 해주자
 > taskkill로 프로세스를 강제 종료하면 서비스는 중지하지 않아도 중지가 되어있을 것이다.
-> 
-> *왜 서비스를 종료할 때 웹서버가 안 꺼지는지는 아직 모르겠어서 알고 있는 분이 있다면 꼭 알려주시길..*
+>
+> _왜 서비스를 종료할 때 웹서버가 안 꺼지는지는 아직 모르겠어서 알고 있는 분이 있다면 꼭 알려주시길.._
 
 이렇게 웹서버를 만들어 exe 파일로 만들고 해당 파일을 서비스에 등록하는 것까지 해보았다.
 이후에 NSIS 를 통해 설치파일까지 만드는 중에도 많은 에러가 있었다. 다음에는 우리가 만든 웹서버 exe파일을 설치파일로 만들고 설치 후 자동으로 서비스 등록 및 시작이 되도록, 언인스톨러 실행시 자동으로 서비스가 종료 및 삭제가 되도록 만들어보자

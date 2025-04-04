@@ -1,13 +1,18 @@
 ---
 title: 사용하는 vue의 버전과 문법에 관해(vue3, script setup)
 description: 앞으로의 vue 글에서 쭉 사용할 vuejs의 버전은 vue2가 아닌 vue3를 사용할 예정.
-head: 
+head:
   title: 사용하는 vue의 버전과 문법에 관해(vue3, script setup) - KKaMang
-tag: vue, vue3, html
+tag:
+  - vue
+  - vue3
+  - html
 date: 2023-10-01
+thumbnail: /img/Pasted image 20231020135906.png
+category: Vue
 ---
 
-# 사용하는 vue의 버전과 문법에 관해(vue3, script setup)
+## Vue3
 
 앞으로의 vue 글에서 쭉 사용할 vuejs의 버전은 **vue2**가 아닌 **vue3**를 사용할 예정.
 
@@ -17,19 +22,20 @@ vue2는 2023년 12월 31일을 끝으로 지원 종료가 되기에 앞으로의
 
 ```vue
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const msg = ref('Hello World!')
+const msg = ref('Hello World!');
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-  <input v-model="msg">
+  <input v-model="msg" />
 </template>
 ```
 
 ::vue-play{src="https://play.vuejs.org/#eNp9kUFLwzAUx79KfJcqzA3ZbXQDlYF6UFHBSy6je+sy0yQkL7NQ+t19SVn1ILv1/X//l/7SdnDr3PQYERZQhsorRyIgRbeSRjXOehKd8LgTvdh524iCq4U00lTWBBJNqMUy8cviAbW24tN6vb0orqQpZ8NxfBAPhI3TG0KehCj3N6uuy8t9X854yqkyLpI4Xjd2i3opgbkERuVs3IYJUOBX71Q9PQRr2LpLuxIq2zil0b84UqwmYSEySWzDZt9POSMfcXLKqz1WX//kh9CmTMKrx4D+iBJGRhtfIw14/f6MLT+PkM2j5vYZ+IbB6pgch9pdNFvW/tPLto/52ytTf4R1S2jC6VJJNDX73JfA/+P+zNV/defTed6Tpof+B7x8phs="}
 ::
+
 <!--  -->
 
 `script setup` 방식을 사용하면 기존의 `setup() 훅`을 사용한 코드보다 간결하게 코드를 작성할 수 있다.
@@ -39,7 +45,7 @@ const msg = ref('Hello World!')
 ```vue
 <template>
   <h1>{{ msg }}</h1>
-  <input v-model="msg">
+  <input v-model="msg" />
 </template>
 
 <script>
@@ -49,10 +55,10 @@ export default {
     const msg = ref('Hello World!');
 
     return {
-      msg
+      msg,
     };
-  }
-}
+  },
+};
 </script>
 ```
 

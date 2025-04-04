@@ -4,7 +4,15 @@
   --fw-bold: 800;
 }
 
-html, body {
+* {
+  /**
+  * mobile click blue highlight removal
+  */
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -26,7 +34,13 @@ a:visited {
 /* markdown */
 .markdown-body {
   padding-bottom: 100px;
+  font-family: 'NanumSquareNeo' !important;
 }
+
+.markdown-body * {
+  font-family: 'NanumSquareNeo' !important;
+}
+
 .markdown-body img {
   margin: 0 auto;
   display: block;
@@ -59,4 +73,8 @@ a:visited {
 .markdown-body pre code,
 .markdown-body pre tt {
   top: auto;
+}
+
+code {
+  font-family: 'D2Coding' !important;
 }
