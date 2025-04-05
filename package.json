@@ -3,7 +3,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@nuxtjs/robots": "^5.1.0",
+    "@nuxtjs/seo": "3.0.2",
     "nuxt": "^3.15.1"
   },
   "private": true,
@@ -19,5 +19,6 @@
     "@nuxt/content": "^2.13.4",
     "@nuxt/image": "rc",
     "clipboard": "^2.0.11"
-  }
+  },
+  "packageManager": "pnpm@10.7.1+sha512.2d92c86b7928dc8284f53494fb4201f983da65f0fb4f0d40baafa5cf628fa31dae3e5968f12466f17df7e97310e30f343a648baea1b9b350685dafafffdf5808"
 }
