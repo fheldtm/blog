@@ -65,7 +65,7 @@ const articleContainsTag = (article: any) => {
                   {{
                     article.category ||
                     path.split('/')[1]?.toUpperCase() ||
-                    'TECH'
+                    'BLOG'
                   }}
                 </div>
                 <div class="board__date">{{ getDate(article.date) || '' }}</div>
