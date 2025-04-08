@@ -3,15 +3,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    '@nuxtjs/robots',
     '@nuxt/content',
     '@nuxtjs/google-fonts',
     '@nuxt/image',
+    '@nuxtjs/seo',
   ],
-
-  robots: {
-    allow: '/',
-  },
 
   content: {
     highlight: {
@@ -40,3 +36,4 @@ export default defineNuxtConfig({
     },
   ],
 });
+
